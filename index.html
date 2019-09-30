@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Grade Calculator by Alexander Dunne</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/styles.css">
+
+  </head>
+  <body>
+
+    <!-- WEBPAGE HEADING -->
+
+    <div class="heading">
+        <h1 id="test">Grade Calculator App</h1>
+    </div>
+
+    <!-- FIRST PART -->
+    <div id="firstPart">
+        <p1>Enter module title:</p1><input type="text" id="assignmentNumber">
+        <br>
+        <p1>Enter assignment weight: </p1><input type="text" id="assignmentWeight">
+        <br>
+        <p1>Enter achieved grade: </p1><input type="text" id="achievedGrade">
+        <br>
+        <button onclick="myFunction()">Go!</button>
+
+
+
+    </div>
+
+    <!-- SECOND PART -->
+    <div id="secondPart">
+      <p id="demo"></p>
+      <p id="demo2"></p>
+    </div>
+
+
+    <script>
+      function myFunction() {
+
+        var moduleName = document.getElementById("assignmentNumber").value;
+        var assignmentWeight = document.getElementById("assignmentWeight").value;
+        var achievedGrade = document.getElementById("achievedGrade").value;
+
+        var totalGrade = (achievedGrade / 100) * assignmentWeight;
+
+        document.getElementById("demo").innerHTML = moduleName;
+        document.getElementById("demo2").innerHTML = totalGrade;
+
+
+      }
+
+    </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+</html>

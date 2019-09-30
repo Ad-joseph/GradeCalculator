@@ -1,0 +1,8 @@
+body {
+  background-color: grey;
+  font-family: helvetica;
+}
+
+#firstPart {
+  border-left: 100px;
+}
