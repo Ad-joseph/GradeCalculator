@@ -1,8 +1,14 @@
 body {
-  background-color: grey;
   font-family: helvetica;
+  margin: 50px;
+
+}
+
+input {
+  margin: auto;
 }
 
 #firstPart {
   border-left: 100px;
+
 }

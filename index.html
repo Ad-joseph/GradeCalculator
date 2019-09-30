@@ -5,7 +5,8 @@
     <title>Grade Calculator by Alexander Dunne</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   </head>
   <body>
@@ -18,15 +19,27 @@
 
     <!-- FIRST PART -->
     <div id="firstPart">
-        <p1>Enter module title:</p1><input type="text" id="assignmentNumber">
+
+        <p1>Enter module title:</p1>
+          <div class="input"><input type="text" id="assignmentNumber">
+          </div>
         <br>
-        <p1>Enter assignment weight: </p1><input type="text" id="assignmentWeight">
+
+        <p1>Enter assignment weight: </p1>
+        <div class="input">
+          <input type="text" id="assignmentWeight">
+            <br>
+        </div>
+
         <br>
-        <p1>Enter achieved grade: </p1><input type="text" id="achievedGrade">
+        <p1>Enter achieved grade: </p1>
+
+        <div class="input">
+          <input type="text" id="achievedGrade">
+        </div>
         <br>
         <button onclick="myFunction()">Go!</button>
-
-
+        <br>
 
     </div>
 
